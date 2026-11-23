@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Administration – Calendrier de l'Avent A.V.I.D</title>
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="admin-body">
+<main class="admin">
+
+  <!-- ===== Connexion ===== -->
+  <section id="login-view" class="card login-card" hidden>
+    <div class="admin__brand" style="margin-bottom:12px">
+      <img src="/assets/logo.svg" alt="A.V.I.D – Pièces Automobiles">
+    </div>
+    <h1>Espace administrateur</h1>
+    <p>Accès réservé à l'équipe A.V.I.D.</p>
+    <form id="login-form" autocomplete="on">
+      <label class="field">
+        <span>Mot de passe</span>
+        <input type="password" id="password" name="password" autocomplete="current-password" required>
+      </label>
+      <button class="btn btn--secondary" type="submit">Se connecter</button>
+      <p class="msg msg--err" id="login-msg" hidden></p>
+    </form>
+  </section>
+
+  <!-- ===== Tableau de bord ===== -->
+  <div id="dashboard-view" hidden>
+    <header class="admin__header">
+      <div class="admin__brand">
+        <img src="/assets/logo.svg" alt="A.V.I.D – Pièces Automobiles">
+        <div>
+          <h1>Calendrier de l'Avent</h1>
+          <p class="muted">Gestion des 24 cases</p>
+        </div>
+      </div>
+      <div class="admin__actions">
+        <a class="btn btn--ghost" href="/" target="_blank" rel="noopener">Voir le site public</a>
+        <a class="btn btn--ghost" href="/?demo=1" target="_blank" rel="noopener">Mode démonstration (toutes les cases)</a>
+        <button class="btn btn--secondary" type="button" id="logout-btn">Se déconnecter</button>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Campagne</h2>
+      <form id="config-form" class="editor-row">
+        <label class="field">
+          <span>Année de la campagne</span>
+          <input type="number" name="campaignYear" min="2020" max="2100" step="1" required>
+          <small>Les cases s'ouvrent du 1er au 24 décembre de cette année (fuseau Europe/Paris).</small>
+        </label>
+        <div class="field field--inline">
+          <input type="checkbox" id="show-demo" name="showDemoBanner">
+          <span>Afficher le bandeau « Mode démonstration : contenus fictifs »</span>
+        </div>
+        <div class="actions-row" style="grid-column:1/-1">
+          <button class="btn btn--secondary" type="submit">Enregistrer la campagne</button>
+        </div>
+        <p class="msg" id="config-msg" hidden style="grid-column:1/-1"></p>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Lien et QR code</h2>
+      <label class="field">
+        <span>Adresse publique du calendrier</span>
+        <input type="url" id="public-url" placeholder="https://votre-domaine.fr/">
+        <small>Une fois le site en ligne, saisissez ici son adresse définitive.</small>
+      </label>
+      <div class="actions-row">
+        <button class="btn btn--secondary" type="button" id="qr-btn">Générer le QR code</button>
+      </div>
+      <div class="qr-box" id="qr-box" hidden>
+        <img id="qr-img" alt="QR code vers le calendrier de l'Avent A.V.I.D">
+        <div>
+          <p class="muted">Le QR code est généré par un service externe à partir de l'adresse ci-dessus. Clic droit sur l'image pour l'enregistrer, ou utilisez le lien ci-dessous.</p>
+          <a class="btn btn--ghost" id="qr-link" href="#" target="_blank" rel="noopener">Ouvrir le QR code en grand</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="admin-grid">
+      <aside class="card">
+        <h2>Les 24 cases</h2>
+        <div class="day-list" id="day-list"></div>
+      </aside>
+
+      <section class="card">
+        <div class="editor-head">
+          <h2 id="editor-title">Case</h2>
+          <button class="btn btn--ghost" type="button" id="preview-btn">Prévisualiser cette case</button>
+        </div>
+
+        <form id="editor">
+          <div class="editor-row">
+            <label class="field field--inline" style="grid-column:1/-1">
+              <input type="checkbox" name="enabled">
+              <span>Promotion active (visible par les clients à sa date)</span>
+            </label>
+            <label class="field" style="grid-column:1/-1">
+              <span>Titre de la promotion</span>
+              <input type="text" name="title" maxlength="140">
+            </label>
+            <label class="field">
+              <span>Remise ou prix</span>
+              <input type="text" name="discount" maxlength="60" placeholder="ex. -15 % ou 29,90 €">
+            </label>
+            <label class="field">
+              <span>Références produits</span>
+              <input type="text" name="references" placeholder="séparées par des virgules">
+            </label>
+            <label class="field" style="grid-column:1/-1">
+              <span>Description complète</span>
+              <textarea name="description" rows="5" maxlength="2000"></textarea>
+            </label>
+            <label class="field">
+              <span>Marques concernées</span>
+              <input type="text" name="brands" placeholder="séparées par des virgules">
+            </label>
+            <label class="field">
+              <span>Conditions de l'offre</span>
+              <textarea name="conditions" rows="3" maxlength="2000"></textarea>
+            </label>
+            <label class="field">
+              <span>Date de publication (optionnelle)</span>
+              <input type="date" name="publishAt">
+              <small>Vide : la case s'ouvre le jour correspondant de décembre.</small>
+            </label>
+            <label class="field">
+              <span>Fin de validité (optionnelle)</span>
+              <input type="date" name="validUntil">
+              <small>Vide : valable jusqu'au 24 décembre. Passée cette date, la case affiche « Offre expirée ».</small>
+            </label>
+          </div>
+
+          <h2 style="margin-top:8px">Photos du produit ou de la marque</h2>
+          <div class="img-list" id="image-list"></div>
+          <div class="upload-row">
+            <input type="file" id="image-input" accept="image/jpeg,image/png,image/webp">
+            <button class="btn btn--ghost" type="button" id="upload-btn">Importer la photo</button>
+          </div>
+          <p class="muted">JPEG, PNG ou WebP, 2 Mo maximum. Pensez à enregistrer la case après l'import.</p>
+
+          <div class="actions-row" style="margin-top:20px">
+            <button class="btn btn--secondary" type="submit">Enregistrer la case</button>
+          </div>
+          <p class="msg" id="editor-msg" hidden></p>
+        </form>
+      </section>
+    </div>
+  </div>
+</main>
+
+<script src="/js/admin.js" defer></script>
+</body>
+</html>

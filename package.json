@@ -1,0 +1,15 @@
+{
+  "name": "avid-calendrier-avent",
+  "version": "1.0.0",
+  "description": "Calendrier de l'Avent interactif A.V.I.D – Pièces Automobiles",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}

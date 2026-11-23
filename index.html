@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Le calendrier de l'Avent A.V.I.D</title>
+  <meta name="description" content="24 jours, 24 surprises pour nos clients ! Découvrez chaque jour une promotion exclusive A.V.I.D – Pièces Automobiles.">
+  <meta name="theme-color" content="#0E3B2B">
+
+  <!-- Aperçu lors du partage (SMS, e-mail, réseaux sociaux).
+       Remplacez VOTRE-DOMAINE.fr par votre adresse réelle une fois le site en ligne. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="A.V.I.D – Pièces Automobiles">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Le calendrier de l'Avent A.V.I.D">
+  <meta property="og:description" content="24 jours, 24 surprises pour nos clients !">
+  <meta property="og:url" content="https://VOTRE-DOMAINE.fr/">
+  <meta property="og:image" content="https://VOTRE-DOMAINE.fr/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Le calendrier de l'Avent A.V.I.D">
+  <meta name="twitter:description" content="24 jours, 24 surprises pour nos clients !">
+  <meta name="twitter:image" content="https://VOTRE-DOMAINE.fr/assets/og-image.jpg">
+
+  <link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="scene" aria-hidden="true">
+    <i style="left:6%;animation-duration:13s;animation-delay:-2s"></i>
+    <i style="left:18%;animation-duration:17s;animation-delay:-8s"></i>
+    <i style="left:29%;animation-duration:11s;animation-delay:-4s"></i>
+    <i style="left:41%;animation-duration:15s;animation-delay:-10s"></i>
+    <i style="left:53%;animation-duration:12s;animation-delay:-6s"></i>
+    <i style="left:64%;animation-duration:18s;animation-delay:-1s"></i>
+    <i style="left:75%;animation-duration:14s;animation-delay:-12s"></i>
+    <i style="left:86%;animation-duration:16s;animation-delay:-5s"></i>
+    <i style="left:94%;animation-duration:10s;animation-delay:-9s"></i>
+  </div>
+
+  <div class="page">
+    <header class="hero">
+      <a class="logo-plate" href="/" aria-label="A.V.I.D – Pièces Automobiles, retour à l'accueil">
+        <img src="/assets/logo.svg" alt="A.V.I.D – Pièces Automobiles" width="230" height="96">
+      </a>
+      <p class="eyebrow">Fêtes de fin d'année · Clients professionnels</p>
+      <h1>LE CALENDRIER DE L'AVENT A.V.I.D</h1>
+      <p class="subtitle">24 jours, 24 surprises pour nos clients !</p>
+
+      <div class="garland" aria-hidden="true">
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <div class="countdown" role="timer" aria-live="off">
+        <span class="countdown__label" id="countdown-label">Chargement…</span>
+        <span class="countdown__time" id="countdown-time">--</span>
+      </div>
+      <p class="demo-banner" id="demo-banner" hidden></p>
+    </header>
+
+    <section class="calendar" id="calendar" aria-label="Cases du calendrier de l'Avent"></section>
+
+    <footer class="footer">
+      <p>Offres réservées aux clients professionnels A.V.I.D. Consultez les conditions de chaque case.</p>
+    </footer>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <dialog class="promo" id="promo" aria-labelledby="promo-title">
+    <article class="promo__card">
+      <button class="promo__close" type="button" id="promo-close" aria-label="Fermer la promotion">×</button>
+
+      <header class="promo__head">
+        <img class="promo__logo" src="/assets/logo.svg" alt="A.V.I.D – Pièces Automobiles" width="150" height="62">
+        <p class="promo__kicker">OFFRE SPÉCIALE NOËL</p>
+        <p class="promo__day" id="promo-day"></p>
+      </header>
+
+      <div class="promo__media">
+        <img id="promo-image" alt="">
+      </div>
+      <div class="promo__thumbs" id="promo-thumbs"></div>
+
+      <h2 class="promo__title" id="promo-title"></h2>
+      <p class="promo__discount" id="promo-discount"></p>
+      <p class="promo__badge" id="promo-badge" hidden>Offre expirée</p>
+      <p class="promo__desc" id="promo-desc"></p>
+
+      <div class="promo__meta">
+        <div>
+          <h3>Marques concernées</h3>
+          <ul id="promo-brands"></ul>
+        </div>
+        <div>
+          <h3>Références produits</h3>
+          <ul id="promo-refs"></ul>
+        </div>
+      </div>
+
+      <p class="promo__validity" id="promo-validity"></p>
+
+      <div class="promo__conditions">
+        <h3>Conditions</h3>
+        <p id="promo-conditions"></p>
+      </div>
+
+      <button class="btn" type="button" id="promo-back">Retour au calendrier</button>
+    </article>
+  </dialog>
+
+  <script src="/js/app.js" defer></script>
+</body>
+</html>

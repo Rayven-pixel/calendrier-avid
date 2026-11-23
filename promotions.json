@@ -1,0 +1,338 @@
+{
+  "config": {
+    "campaignYear": 2026,
+    "showDemoBanner": true
+  },
+  "promotions": [
+    {
+      "day": 1,
+      "enabled": true,
+      "publishAt": "",
+      "validUntil": "2026-12-01",
+      "title": "+5 % sur les alternateurs et démarreurs CEVAM",
+      "discount": "+5 %",
+      "description": "Mardi 1er décembre : +5 % sur les alternateurs et démarreurs CEVAM.",
+      "brands": [
+        "CEVAM"
+      ],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 2,
+      "enabled": true,
+      "publishAt": "",
+      "validUntil": "2026-12-02",
+      "title": "+5 % sur les embrayages VALEO",
+      "discount": "+5 %",
+      "description": "Mercredi 2 décembre : +5 % sur les embrayages VALEO.",
+      "brands": [
+        "VALEO"
+      ],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 3,
+      "enabled": true,
+      "publishAt": "",
+      "validUntil": "2026-12-03",
+      "title": "+5 % sur les kits distribution + pompe DAYCO",
+      "discount": "+5 %",
+      "description": "Jeudi 3 décembre : +5 % sur les kits distribution + pompe DAYCO.",
+      "brands": [
+        "DAYCO"
+      ],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 4,
+      "enabled": true,
+      "publishAt": "",
+      "validUntil": "2026-12-04",
+      "title": "+8 % sur les balais d’essuie-glace VALEO",
+      "discount": "+8 %",
+      "description": "Vendredi 4 décembre : +8 % sur les balais d’essuie-glace VALEO.",
+      "brands": [
+        "VALEO"
+      ],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 5,
+      "enabled": false,
+      "publishAt": "",
+      "validUntil": "",
+      "title": "",
+      "discount": "",
+      "description": "",
+      "brands": [],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 6,
+      "enabled": false,
+      "publishAt": "",
+      "validUntil": "",
+      "title": "",
+      "discount": "",
+      "description": "",
+      "brands": [],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 7,
+      "enabled": true,
+      "publishAt": "",
+      "validUntil": "2026-12-07",
+      "title": "+8 % sur l’ensemble des bougies NGK",
+      "discount": "+8 %",
+      "description": "Lundi 7 décembre : +8 % sur l’ensemble des bougies NGK.",
+      "brands": [
+        "NGK"
+      ],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 8,
+      "enabled": true,
+      "publishAt": "",
+      "validUntil": "2026-12-08",
+      "title": "+8 % sur les kits de roue/butée SNR",
+      "discount": "+8 %",
+      "description": "Mardi 8 décembre : +8 % sur les kits de roue/butée SNR.",
+      "brands": [
+        "SNR"
+      ],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 9,
+      "enabled": true,
+      "publishAt": "",
+      "validUntil": "2026-12-09",
+      "title": "+8 % sur l’ensemble de la filtration MANN FILTER",
+      "discount": "+8 %",
+      "description": "Mercredi 9 décembre : +8 % sur l’ensemble de la filtration MANN FILTER.",
+      "brands": [
+        "MANN FILTER"
+      ],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 10,
+      "enabled": true,
+      "publishAt": "",
+      "validUntil": "2026-12-10",
+      "title": "+8 % sur l’ensemble des ampoules NAPA",
+      "discount": "+8 %",
+      "description": "Jeudi 10 décembre : +8 % sur l’ensemble des ampoules NAPA.",
+      "brands": [
+        "NAPA"
+      ],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 11,
+      "enabled": true,
+      "publishAt": "",
+      "validUntil": "2026-12-11",
+      "title": "4 boîtes d’abrasifs INDASA = 1 offerte",
+      "discount": "4 achetées = 1 offerte",
+      "description": "Vendredi 11 décembre : 4 boîtes d’abrasifs INDASA = 1 offerte.",
+      "brands": [
+        "INDASA"
+      ],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 12,
+      "enabled": false,
+      "publishAt": "",
+      "validUntil": "",
+      "title": "",
+      "discount": "",
+      "description": "",
+      "brands": [],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 13,
+      "enabled": false,
+      "publishAt": "",
+      "validUntil": "",
+      "title": "",
+      "discount": "",
+      "description": "",
+      "brands": [],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 14,
+      "enabled": false,
+      "publishAt": "",
+      "validUntil": "",
+      "title": "",
+      "discount": "",
+      "description": "",
+      "brands": [],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 15,
+      "enabled": false,
+      "publishAt": "",
+      "validUntil": "",
+      "title": "",
+      "discount": "",
+      "description": "",
+      "brands": [],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 16,
+      "enabled": false,
+      "publishAt": "",
+      "validUntil": "",
+      "title": "",
+      "discount": "",
+      "description": "",
+      "brands": [],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 17,
+      "enabled": false,
+      "publishAt": "",
+      "validUntil": "",
+      "title": "",
+      "discount": "",
+      "description": "",
+      "brands": [],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 18,
+      "enabled": false,
+      "publishAt": "",
+      "validUntil": "",
+      "title": "",
+      "discount": "",
+      "description": "",
+      "brands": [],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 19,
+      "enabled": false,
+      "publishAt": "",
+      "validUntil": "",
+      "title": "",
+      "discount": "",
+      "description": "",
+      "brands": [],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 20,
+      "enabled": false,
+      "publishAt": "",
+      "validUntil": "",
+      "title": "",
+      "discount": "",
+      "description": "",
+      "brands": [],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 21,
+      "enabled": false,
+      "publishAt": "",
+      "validUntil": "",
+      "title": "",
+      "discount": "",
+      "description": "",
+      "brands": [],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 22,
+      "enabled": false,
+      "publishAt": "",
+      "validUntil": "",
+      "title": "",
+      "discount": "",
+      "description": "",
+      "brands": [],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 23,
+      "enabled": false,
+      "publishAt": "",
+      "validUntil": "",
+      "title": "",
+      "discount": "",
+      "description": "",
+      "brands": [],
+      "references": [],
+      "conditions": "",
+      "images": []
+    },
+    {
+      "day": 24,
+      "enabled": false,
+      "publishAt": "",
+      "validUntil": "",
+      "title": "",
+      "discount": "",
+      "description": "",
+      "brands": [],
+      "references": [],
+      "conditions": "",
+      "images": []
+    }
+  ]
+}

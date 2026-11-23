@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 100" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">A.V.I.D – Pièces Automobiles</title>
+  <!-- LOGO PROVISOIRE : remplacez ce fichier par le logo officiel (même nom de fichier). -->
+  <rect x="1" y="1" width="238" height="98" rx="10" fill="#FFFDF8"/>
+  <text x="120" y="56" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="46" fill="#B1151F" letter-spacing="2">A.V.I.D</text>
+  <line x1="50" y1="68" x2="190" y2="68" stroke="#D4AF5A" stroke-width="2"/>
+  <text x="120" y="84" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="12" fill="#0E3B2B" letter-spacing="3">PIÈCES AUTOMOBILES</text>
+</svg>
